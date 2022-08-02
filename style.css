@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  .clearfix{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  body{
+      padding: 15px;
+      position: inherit;
+      max-width: 800px;
+      margin: auto;
+  }
+
+  .header {
+      background-color: #C0B3A7;
+      border-bottom: 12px solid #7D7B76;
+      margin-bottom: 20px;
+      padding: 10px;
+      display: flex;
+  }
+
+  .header-avatar {
+    border: 10px solid #8E8986;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+  }
+
+  .header-content {
+    margin-left: 2%;
+    width: calc(100% - 150px);
+  }
+
+  .header-content div{
+    width: 50%;
+    float: left;
+  }
+
+  .header-content span{
+    font-size: small;
+    line-height: 30px;
+  }
+
+  .header-content span i{
+    margin-right: 5px;
+  }
+
+  .main {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .left {
+    width: 63%;
+  }
+
+  .right{
+    width: 32%;
+  }
+
+  .main-content-block{
+    margin-bottom: 20px;
+  }
+
+  .header-block{
+    margin-bottom: 10px;
+    border-bottom: 5px solid gray;
+    overflow: visible;
+    width: 70px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    transition: width 2s;
+  }
+
+  .header-block:hover{
+    width: 70%;
+    cursor: pointer;
+  }
+
+  .time-block{
+    font-size: small;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .title-block{
+    font-weight: bold;
+    font-size: small;
+  }
+
+  .content-block{
+    font-size: small;
+  }
+
+  .content-italic{
+    font-style: italic;
+  }
+
+  .black-circle{
+    display: inline-block;
+    background-color: rgb(46, 46, 46);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 2px 2px 2px 0;
+  }
+
+  .gray-circle{
+    display: inline-block;
+    background-color: rgb(190, 190, 190);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 2px 2px 2px 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    main, header{
+      flex-direction: column;
+    }
+    .left, .right {
+      width: 100%;
+    } 
+  }
+
+  @media screen and (max-width: 600px) {
+    main, header{
+      flex-direction: column;
+    }
+
+    .header-content{
+      width: 100%;
+    }
+
+    .header-content div {
+      float: none;
+      width: 100%;
+    } 
+  }
+
